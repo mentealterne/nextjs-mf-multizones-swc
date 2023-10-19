@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --fix",
+    "clean": "rm -rf .next && rm -rf .turbo"
+
   },
   "dependencies": {
     "eslint-config-rad": "1.0.0",
