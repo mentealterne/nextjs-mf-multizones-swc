@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+module.exports = {
+  basePath: '/booking-area',
+  cleanUrls: true,
+  trailingSlash: false,
 
-module.exports = nextConfig
+}

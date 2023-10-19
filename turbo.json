@@ -10,7 +10,7 @@
       ]
     },
     "main#build": {
-      "dependsOn": ["^build", "$DOCS_URL"],
+      "dependsOn": ["^build", "$BOOKING_AREA_URL"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "test": {
@@ -21,7 +21,9 @@
       "outputs": []
     },
     "dev": {
-      "cache": false
+      "cache": false,
+      "persistent": true
+
     },
     "start": {
       "cache": false
