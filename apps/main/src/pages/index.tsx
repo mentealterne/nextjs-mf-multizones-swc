@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import { sum } from '@rad/libraries'
+import { PlainButton, BaseLink } from '@rad/design-system'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Index() {
@@ -8,7 +9,9 @@ export default function Index() {
     <>
       <h1>HOME PAGE</h1>
       <h2>Button from shared packages:</h2>
-      <a href="/booking-area">Switch to booking area app</a>
+      <PlainButton />
+      <BaseLink href={'/booking-area'}>Go to booking area app</BaseLink>
+
     </>
   )
 }
