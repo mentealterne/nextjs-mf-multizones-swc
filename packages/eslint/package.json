@@ -1,5 +1,5 @@
 {
-  "name": "rad-eslint",
+  "name": "eslint-config-rad",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",

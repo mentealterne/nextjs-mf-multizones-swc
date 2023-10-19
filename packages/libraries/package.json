@@ -1,0 +1,12 @@
+{
+  "name": "@rad/libraries",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "resolutions": {
+    "eslint-config-rad": "workspace:*"
+  },
+  "dependencies": {
+    "eslint-config-rad": "1.0.0"
+  }
+}
