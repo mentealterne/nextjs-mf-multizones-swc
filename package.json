@@ -1,0 +1,33 @@
+{
+  "name": "rad-next-multizones-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "a multizones monorepo example",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces":  [
+      "apps/*",
+      "packages/*"
+    ],
+
+  "scripts": {
+    "build": "turbo run build",
+    "build:main": "turbo run build --filter=main...",
+    "build:bookingArea": "turbo run build --filter=bookingArea...",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "lint": "turbo run lint",
+    "format": "prettier --write .",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=main... && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@types/node": "^20.8.7",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.15"
+  },
+  "packageManager": "yarn@1.22.10"
+}
