@@ -10,10 +10,10 @@
     "eslint-config-rad": "1.0.0"
   },
   "scripts": {
-    "build": "rm -rf dist && yarn build:swc",
-    "build:swc": "swc src -d dist",
+    "dev": "yarn build --watch",
+    "build": "tsup src/* --format esm,cjs --dts --external react",
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
-    "clean": "rm -rf ./dist && rm -rf .turbo",
+    "clean": "rm -rf ./dist && rm -rf .turbo && rm -rf node_modules",
     "types": "tsc --emitDeclarationOnly"
   },
   "sideEffects": false,
@@ -54,5 +54,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "devDependencies": {
+    "tsup": "^7.2.0"
+  }
 }

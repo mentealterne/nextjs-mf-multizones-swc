@@ -13,7 +13,7 @@
   "scripts": {
     "build": "turbo run build",
     "build:main": "turbo run build --filter=main...",
-    "build:bookingArea": "turbo run build --filter=bookingArea...",
+    "build:bookingArea": "turbo run build --filter=booking-area...",
     "dev": "turbo run dev",
     "start": "turbo run start",
     "clean": "turbo run clean && rm -rf node_modules",
