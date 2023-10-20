@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
-    "clean": "rm -rf .next && rm -rf .turbo && rm -rf node_modules"
+    "clean": "rm -rf .next && rm -rf .turbo "
   },
   "dependencies": {
     "@rad/design-system": "1.0.0",

@@ -12,7 +12,7 @@
     "build:swc": "swc src -d dist",
     "types": "tsc --emitDeclarationOnly",
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
-    "clean": "rm -rf ./dist && rm -rf .turbo && rm -rf node_modules"
+    "clean": "rm -rf ./dist && rm -rf .turbo "
   },
   "exports": {
     ".": "./dist/index.js",
@@ -59,6 +59,8 @@
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.14.14",
     "@mui/material": "^5.14.14",
-    "eslint-config-rad": "1.0.0"
+    "eslint-config-rad": "1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
